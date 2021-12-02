@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pi Hydroponics</title>
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/jquery.circliful.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-inner">
+        <h1 class="header__title">水耕栽培キット</h1>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+
+  <!-- main -->
+  <main>
+
+    <section class="section">
+      <div class="wrapper">
+
+        <div class="result">
+          <div class="result-box">
+            <div class="result-box-inner">
+              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">更新履歴</h2>
+              <ul id="js-history" class="history"></ul>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner">
+              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">水やり履歴</h2>
+              <ul id="js-waterhistory" class="history"></ul>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/temp.svg" width="8" height="15">気温</h2>
+              <div id="js-temp" class="temp circle"></div>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/hum.svg" width="10" height="13">湿度</h2>
+              <div id="js-hum" class="hum circle"></div>
+            </div>
+          </div>
+
+          <div class="result-box result-box--wide">
+            <div class="result-box-inner result-box-inner--chart">
+              <canvas id="js-chart" width="200" height="200"></canvas>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/dist.svg" width="15" height="15">水位</h2>
+              <div id="js-dist" class="dist circle"></div>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner result-box-inner--circle">
+              <h2 class="result-box__head"><img src="./img/light.svg" width="15" height="15">照度</h2>
+              <div id="js-lit" class="light circle"></div>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <div class="result-box-inner">
+              <h2 class="result-box__head"><img src="./img/weather.svg" width="15" height="15">今日の天気</h2>
+              <div id="js-weather" class="weather">
+                <div class="loader"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-box result-box--wide">
+            <div class="result-box-inner result-box-inner--table">
+              <div id="js-forecast" class="forecast">
+                <div class="loader"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- //main -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="wrapper">
+      <p><small>&copy; 2021 Daisuke Sumida</small></p>
+    </div>
+  </footer>
+  <!-- //footer -->
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+  <script src="./js/jquery.circliful.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/weather.js"></script>
+</body>
+
+</html>
