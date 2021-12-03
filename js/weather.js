@@ -58,7 +58,7 @@ function mapsInit(position) {
     http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&lang=ja&APPID=${appId}
   `;
   dataGET(weatherUrl, function(data) {
-    console.log(data);
+    // console.log(data);
 
     let weatherOutput = `
       <div class="weather__icon">
@@ -74,7 +74,6 @@ function mapsInit(position) {
       </div>
     `;
     $("#js-weather").html(weatherOutput);
-
   });
 
   // ------------- forecast -------------
@@ -82,7 +81,7 @@ function mapsInit(position) {
     http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&lang=ja&APPID=${appId}
   `;
   dataGET(forecastUrl, function(data) {
-    console.log(data);
+    // console.log(data);
 
     // データを整理した連想配列を作成
     let dataArray = [];

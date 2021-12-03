@@ -34,6 +34,7 @@ import {
   onSnapshot,
   query,
   orderBy,
+  limit,
 } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "",
@@ -45,7 +46,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const q = query(collection(db, "Database"), orderBy("Time", "desc"));
+const q = query(collection(db, "Database"), orderBy("Time", "desc"), limit(24));
 
 /* ---------------------------
   データ取得
@@ -90,6 +91,9 @@ onSnapshot(q, (querySnapshot) => {
       let water_history_li = `<li>${water_history_array[i]}</li>`;
       $("#js-waterhistory").append(water_history_li);
     }
+  } else if( !water_history_array.length ) {
+    let water_history_li = `<li>最近の<br>水やり履歴は<br>ありません</li>`;
+    $("#js-waterhistory").append(water_history_li);
   } else {
     // 3件未満の場合
     water_history_array.forEach(function(data){

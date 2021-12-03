@@ -31,69 +31,138 @@
     <section class="section">
       <div class="wrapper">
 
-        <div class="result">
-          <div class="result-box">
-            <div class="result-box-inner">
-              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">更新履歴</h2>
-              <ul id="js-history" class="history"></ul>
-            </div>
-          </div>
+        <div class="grid">
 
-          <div class="result-box">
-            <div class="result-box-inner">
-              <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">水やり履歴</h2>
-              <ul id="js-waterhistory" class="history"></ul>
-            </div>
-          </div>
-
-          <div class="result-box">
-            <div class="result-box-inner result-box-inner--circle">
-              <h2 class="result-box__head"><img src="./img/temp.svg" width="8" height="15">気温</h2>
-              <div id="js-temp" class="temp circle"></div>
-            </div>
-          </div>
-
-          <div class="result-box">
-            <div class="result-box-inner result-box-inner--circle">
-              <h2 class="result-box__head"><img src="./img/hum.svg" width="10" height="13">湿度</h2>
-              <div id="js-hum" class="hum circle"></div>
-            </div>
-          </div>
-
-          <div class="result-box result-box--wide">
-            <div class="result-box-inner result-box-inner--chart">
-              <canvas id="js-chart" width="200" height="200"></canvas>
-            </div>
-          </div>
-
-          <div class="result-box">
-            <div class="result-box-inner result-box-inner--circle">
-              <h2 class="result-box__head"><img src="./img/dist.svg" width="15" height="15">水位</h2>
-              <div id="js-dist" class="dist circle"></div>
-            </div>
-          </div>
-
-          <div class="result-box">
-            <div class="result-box-inner result-box-inner--circle">
-              <h2 class="result-box__head"><img src="./img/light.svg" width="15" height="15">照度</h2>
-              <div id="js-lit" class="light circle"></div>
-            </div>
-          </div>
-
-          <div class="result-box">
-            <div class="result-box-inner">
-              <h2 class="result-box__head"><img src="./img/weather.svg" width="15" height="15">今日の天気</h2>
-              <div id="js-weather" class="weather">
-                <div class="loader"></div>
+          <div class="item item--small" data-id="1">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner">
+                  <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">更新履歴</h2>
+                  <div class="result-box__content">
+                    <ul id="js-history" class="history"></ul>
+                  </div>
+                </div>
               </div>
+              <!-- //result -->
             </div>
           </div>
 
-          <div class="result-box result-box--wide">
-            <div class="result-box-inner result-box-inner--table">
-              <div id="js-forecast" class="forecast">
-                <div class="loader"></div>
+          <div class="item item--small" data-id="2">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner">
+                  <h2 class="result-box__head"><img src="./img/history.svg" width="16" height="16">水やり履歴</h2>
+                  <div class="result-box__content">
+                    <ul id="js-waterhistory" class="history"></ul>
+                  </div>
+                </div>
               </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item" data-id="3">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--circle">
+                  <h2 class="result-box__head"><img src="./img/temp.svg" width="8" height="15">気温</h2>
+                  <div class="result-box__content">
+                    <div id="js-temp" class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item" data-id="4">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--circle">
+                  <h2 class="result-box__head"><img src="./img/hum.svg" width="10" height="13">湿度</h2>
+                  <div class="result-box__content">
+                    <div id="js-hum" class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item item--wide item--large" data-id="5">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--chart">
+                  <canvas id="js-chart" width="200" height="200"></canvas>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item" data-id="6">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--circle">
+                  <h2 class="result-box__head"><img src="./img/dist.svg" width="15" height="15">水位</h2>
+                  <div class="result-box__content">
+                    <div id="js-dist" class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item" data-id="7">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--circle">
+                  <h2 class="result-box__head"><img src="./img/light.svg" width="15" height="15">照度</h2>
+                  <div class="result-box__content">
+                    <div id="js-lit" class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item" data-id="8">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner">
+                  <h2 class="result-box__head"><img src="./img/weather.svg" width="15" height="15">今日の天気</h2>
+                  <div class="result-box__content">
+                    <div id="js-weather" class="weather">
+                      <div class="loader"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
+            </div>
+          </div>
+
+          <div class="item item--wide item--large" data-id="9">
+            <div class="item-content">
+              <!-- result -->
+              <div class="result-box">
+                <div class="result-box-inner result-box-inner--table">
+                  <div id="js-forecast" class="forecast">
+                    <div class="loader"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //result -->
             </div>
           </div>
 
@@ -119,6 +188,7 @@
   <script src="./js/jquery.circliful.min.js"></script>
   <script type="module" src="./js/index.js"></script>
   <script type="text/javascript" src="./js/weather.js"></script>
+  <script type="text/javascript" src="./js/sort.js"></script>
 </body>
 
 </html>
